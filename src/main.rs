@@ -1,5 +1,6 @@
 fn main() {
-    let t: (i8, bool) = (7, true);
-    println!("1st index :{}", t.0);
-    println!("2nd index :{}", t.1);
+    let mut x: i32 = 10;
+    let ref_x: &mut i32 = &mut x;
+    *ref_x = 20;
+    println!("x :{x}");
 }
